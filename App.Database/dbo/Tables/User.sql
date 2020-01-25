@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[User]
+(
+	[Id] BIGINT NOT NULL,
+	[FirstName] VARCHAR(30) NOT NULL,
+	[LastName] VARCHAR(30) NOT NULL,
+	[Email] VARCHAR(250) NOT NULL,
+	[PasswordHash] VARCHAR(250) NOT NULL, 
+	[HashSalt] VARCHAR(250) NOT NULL,
+	[DateOfBirth] DATETIME2 NOT NULL,
+	[PhoneNumberCountry] NVARCHAR(3) NOT NULL,
+	[PhoneNumber] NVARCHAR(10) NOT NULL,
+	CONSTRAINT PK_User PRIMARY KEY CLUSTERED (Id),
+	CONSTRAINT UC_User_Email UNIQUE (Email)
+)

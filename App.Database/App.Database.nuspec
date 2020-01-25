@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>App.Database</id>
+    <title>App Database project</title>
+    <version>1.0.0</version>
+    <authors>Kamal Jassal</authors>
+    <owners>Kamal Jassal</owners>
+    <licenseUrl>https://github.com/kamal-k-j/App.Database</licenseUrl>
+    <projectUrl>https://github.com/kamal-k-j/App.Database</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>App database deployment package</description>
+    <releaseNotes>None</releaseNotes>
+  </metadata>
+  <files>
+    <file src="\bin\Release\App.Database.dacpac" target="Content" />
+    <file src="\bin\Release\App.Database.nondev.publish.xml" target="Content" />
+  </files>
+</package>
